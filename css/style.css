@@ -1,25 +1,35 @@
 @font-face {
     font-family: 'Montserrat', sans-serif;
     src: url(../font/Montserrat-VariableFont_wght.ttf);
-    font-weight: normal;
+    font-weight: 500;
     font-style: normal;
-} 
-    
+}
+@font-face {
+    font-family: 'Oswald', sans-serif;
+    src: url(../font/Oswald-Medium.ttf);
+    font-weight: 500;
+    font-style: normal;
+}
+
 
 body {
     box-sizing: border-box;
 }
-.header {
+.container {
     width: 100wv;
     font-family: Montserrat;
     background-color: skyblue;
 }
-.container {
+.header_wrap {
     display: flex;
     justify-content: space-between;
     width: 100%;
     align-items: center;
+    margin-bottom: -42px;
+ 
+   
 }
+
 button {
     margin-left: 81px;
     border-radius: 4px;
@@ -42,13 +52,57 @@ button {
     background-repeat: no-repeat;
     background-size: cover;
     text-align: center;
+    margin-bottom: 170px;
 }
+h1 {
+    font-family: Oswald;
+    font-size: 60px;
+    color: #FFFFFF;
+    padding-top: 329px;
+}
+.promo .learn {
+    font-family: Montserrat;
+    vertical-align: center;
+    font-size: 32px;
+    line-height: 39px;
+    color: #FFFFFF;
+    filter: drop-shadow( 2px #060D10);
+    padding: 60px 16.66% 260px 16.66%;
+}
+.how_learn {
+    font-family: Oswald;
 
+}
+h2 {
+    font-size: 48px;
+    width: 978px;
+    margin: 0 auto;
+}
+h3 {
+    font-size: 32px;
+    font-family: Oswald;
+}
+ul {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    justify-content: space-between;
+    padding: 70px 81px 70px 81px;
+   
+}
+li {
+    width: 33.33%;
+ 
+    background-color: aqua;
+}
+li p{
+    font-family: Montserrat;
+    font-weight: 400;
+    font-size: 26px;
+    line-height: 36.4px;
+}
 
 .lead {
     width: 100%;
-    /* Effect: Drop shadow; */
-    /* Radius: 4px;
-    Offset: 0px, 4px
-    rgba(0, 0, 0, 0.25); */
+  
 }
