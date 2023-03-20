@@ -10,23 +10,27 @@
     font-weight: 500;
     font-style: normal;
 }
-
-
 body {
     box-sizing: border-box;
+
 }
-.container {
-    width: 100wv;
+
+.header {
+    width: 100%;
     font-family: Montserrat;
-    background-color: skyblue;
+    background-color: #66d1ff;
+}
+.header_inner {
+    width: 1278px;
+    margin: 0 auto;
+    padding: 0 15px;
+   
 }
 .header_wrap {
     display: flex;
     justify-content: space-between;
     width: 100%;
     align-items: center;
-    margin-bottom: -42px;
- 
    
 }
 
@@ -35,6 +39,15 @@ button {
     border-radius: 4px;
     border: 2px solid  black;
     filter: drop-shadow(0 0 3px rgba(0, 0, 0, 0.25));
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+a:hover {
+    color: red;
 }
 .logo {
     margin: 31px 0 31px 0;
@@ -45,20 +58,29 @@ button {
     font-weight: 500;
     font-size: 28px;
 }
-/* main */
+
 .promo {
     background-image: url(../img/promo.jpg);
-    background-position: center;
+    width: 100wv;
+    background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
+    background-color: rgba(6, 13, 16, 0.25);
     text-align: center;
-    margin-bottom: 170px;
+    margin-top: -45px;
+   
+}
+.promo_content {
+    max-width: 1278px; 
+    margin: 0 auto;
+    padding: 0 15px;
+   
 }
 h1 {
     font-family: Oswald;
     font-size: 60px;
     color: #FFFFFF;
-    padding-top: 329px;
+    padding-top: 240px;
 }
 .promo .learn {
     font-family: Montserrat;
@@ -69,40 +91,168 @@ h1 {
     filter: drop-shadow( 2px #060D10);
     padding: 60px 16.66% 260px 16.66%;
 }
-.how_learn {
-    font-family: Oswald;
 
+.services {
+    font-family: Oswald;
+    background-image: url(../img/Rectangle\ 4\ \(2\).png);
+    padding: 170px 0;  
+    background-size: cover;
 }
+
+.services_inner {
+    width: 1278px;
+    margin: 0 auto;
+    padding: 0 15px;
+         
+}
+
 h2 {
+    font-family: Oswald;
     font-size: 48px;
+    line-height: 80px;
     width: 978px;
     margin: 0 auto;
+    text-align: center;
 }
+
 h3 {
     font-size: 32px;
     font-family: Oswald;
 }
+
 ul {
     display: flex;
     flex-wrap: wrap;
+    margin: 100px 0 0 -40px;
     list-style: none;
     justify-content: space-between;
-    padding: 70px 81px 70px 81px;
-   
+
 }
+
 li {
-    width: 33.33%;
- 
-    background-color: aqua;
+    flex-basis: 33.33%;
 }
+
 li p{
     font-family: Montserrat;
     font-weight: 400;
     font-size: 26px;
-    line-height: 36.4px;
+    line-height: 36px;
 }
 
 .lead {
-    width: 100%;
+    background-image: url(../img/Rectangle\ 4.png);
+    background-size: cover;
+    
+}
+
+.lead_inner {
+    width: 1278px;
+    margin: 0 auto;
+    padding: 170px 15px 180px;
+ 
+}
+
+.vision {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    justify-content: space-between;
+ 
+}
+
+.vision img {
+   display: block;
+   max-width: 25%;
+   padding-left: 20px;
+   
+
+}
+.vision  :first-child {
+    padding-left: 0;
+   
+}
+.lead h3 {
+    font-family: Montserrat;
+    font-size: 36px;
+    line-height: 44px;
+    text-align: center;
+    margin: 60px 0 130px;
+}
+
+footer {
+    width: 100vw;
+    background-color: #060D10;
+}
+
+.footer_wrap {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    width: 1278px;
+    padding: 0 15px;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+.footer_wrap :first-child {
+    display: block;
+    width: 171px;
+    height: 33px;
+    font-family: 
+    Montserrat;
+    font-size: 20px;
+    line-height: 33px;
+    padding-right: 50px;
+}
+
+.footer_wrap img {
+    display: block;
+    width: 44px;
+    padding-right: 20px;
+}
+
+.footer_wrap :last-child {
+    display: block;
+    width: 197px;
+    height: 22px;
+    margin-left: auto;
+}
+
+.footer_wrap a {
+    color: white;
   
 }
+.footer_wrap a:hover {
+    color: red;
+}
+/* break point */
+/* @media (max-width:1300px); */
+/* @media (max-width:1300px) {
+    .promo {
+        margin-top: 0;
+    }
+    li {
+        flex-basis: 50%;
+    }
+    .vision img {
+      width: 50%;
+      padding: 10px;
+      background-color: brown;
+    }
+    .footer_wrap {
+        flex-basis: 33.33%;
+    }
+  }
+@media (max-width:1285px) {
+    .footer_wrap {
+        flex-basis: 100%;
+        align-items: center;
+        justify-content: center;
+    } */
+    /* .vision img {
+        flex-basis: 100%;
+        padding: 5px;
+      }    */
+/* } */
